@@ -19,7 +19,8 @@ export function formatTimeForItaly(date: Date): string {
     minute: "2-digit",
     second: "2-digit",
     hour12: true, // This will format the time in 12-hour format with AM/PM
-    timeZone: "Europe/Rome",
+    // use a florida time zone
+    timeZone: "America/New_York",
   };
 
   let formattedTime = new Intl.DateTimeFormat("en-US", options).format(date);
