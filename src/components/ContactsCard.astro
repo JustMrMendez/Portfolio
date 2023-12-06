@@ -4,33 +4,43 @@ import { LINKS } from "../lib/constants";
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
-  <div class="h-full">
-    <header class="flex items-center">
-      <h1 class="text-white text-xl font-bold">
-        Let's start working together!
-      </h1>
-    </header>
-    <address class="flex flex-col mt-4">
-      <h2 class="text-gray-500">Contact Details</h2>
-      <p>hello@mrmendez.dev</p>
-      <p>Miami, FL</p>
-    </address>
-    <div class="flex flex-col mt-4 w-fit">
-      <h2 class="text-gray-500">Socials</h2>
-      <ul>
-        <li>
-          <a href={LINKS.linkedin} target="_blank">Linkedin</a>
-        </li>
-        <li>
-          <a href={LINKS.github} target="_blank">Github</a>
-        </li>
-        <li>
-          <a href={LINKS.x} target="_blank">Twitter {'->'} X </a>
-        </li>
-        <!-- <li>
+	<div class="h-full">
+		<header class="flex items-center">
+			<h1 class="text-white text-xl font-bold">
+				Let's start working together!
+			</h1>
+		</header>
+		<address class="flex flex-col mt-4">
+			<h2 class="text-gray-500">Contact Details</h2>
+			<p>hello@mrmendez.dev</p>
+			<p>Miami, FL</p>
+		</address>
+		<div class="flex flex-col mt-4 w-fit">
+			<h2 class="text-gray-500">Socials</h2>
+			<ul class="flex flex-col w-fit">
+				<li class="p-2 hover:bg-primary-500/30 rounded transition-colors duration 200">
+					<a href={LINKS.linkedin} target="_blank">Linkedin</a>
+				</li>
+				<li class="p-2 hover:bg-primary-500/30 rounded transition-colors duration 200">
+					<a href={LINKS.github} target="_blank">Github</a>
+				</li>
+				<li class="p-2 hover:bg-primary-500/30 rounded transition-colors duration 200">
+					<a href={LINKS.x} target="_blank">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-4"
+							viewBox="0 0 24 24"
+							><path
+								fill="currentColor"
+								d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231l5.45-6.231Zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77Z"
+							></path></svg
+						>
+					</a>
+				</li>
+				<!-- <li class="p-2 hover:bg-slate-900">
           <a href={LINKS.discord} target="_blank">Discord</a>
         </li> -->
-      </ul>
-    </div>
-  </div>
+			</ul>
+		</div>
+	</div>
 </Card>
